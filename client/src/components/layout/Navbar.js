@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import { clearCurrentProfile } from "../../actions/profileActions";
-
 class Navbar extends Component {
   onLogoutClick(e) {
     e.preventDefault();
@@ -54,11 +53,9 @@ class Navbar extends Component {
     );
 
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-info mb-4">
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            DevUnite
-          </Link>
+          <Link className="navbar-brand logo" to="/" />
           <button
             className="navbar-toggler"
             type="button"
@@ -72,7 +69,6 @@ class Navbar extends Component {
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <Link className="nav-link" to="/profiles">
-                  {" "}
                   Developers
                 </Link>
               </li>
@@ -80,7 +76,7 @@ class Navbar extends Component {
             {isAuthenticated ? authLinks : guestLinks}
           </div>
         </div>
-      </nav>
+      </nav >
     );
   }
 }

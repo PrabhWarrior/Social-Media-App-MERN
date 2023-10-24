@@ -12,6 +12,16 @@ img {
   margin-bottom: -50px;
 }
 
+.logo {
+  position: relative;
+  background: url(../public/logo.png);
+  width: 150px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 .landing-inner {
   padding-top: 80px;
 }
