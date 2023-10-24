@@ -1,5 +1,5 @@
 /node_modules
 package-lock.json
-/config
 client/src/components/edit-profile/EditProfile.js
 .gitignore
+.env
