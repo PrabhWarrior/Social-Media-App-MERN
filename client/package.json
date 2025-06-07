@@ -45,7 +45,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://social-media-app-mern-lflq.onrender.com",
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3"
   }
